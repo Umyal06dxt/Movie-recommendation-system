@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
   };
 
   const handleRandomMovie = () => {
-    navigate("/discover?random=true");
+    navigate("/discover");
   };
 
   
@@ -70,10 +70,10 @@ const Navbar: React.FC = () => {
             </a>
             
             <div className="hidden md:flex space-x-6">
-              <a href="/discover" className="text-gray-300 hover:text-white">Discover</a>
-              <a href="/recommendations" className="text-gray-300 hover:text-white">Recommendations</a>
-              <a href="/shows" className="text-gray-300 hover:text-white">TV Shows</a>
-              <a href="/reviews" className="text-gray-300 hover:text-white flex items-center space-x-2">
+              <a onClick={handleRandomMovie} className="text-gray-300 hover:text-white">Discover</a>
+              <a onClick={() => navigate("/recommendations")} className="text-gray-300 hover:text-white">Recommendations</a>
+              <a onClick={() => navigate("/shows")} className="text-gray-300 hover:text-white">TV Shows</a>
+              <a onClick={() => navigate("/reviews")} className="text-gray-300 hover:text-white flex items-center space-x-2 hover:pointer-events-auto">
                 <Quote className="w-4 h-4" />
                 <span>Reviews</span>
               </a>
