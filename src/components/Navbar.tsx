@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
   };
 
   const handleRandomMovie = () => {
-    navigate("/discover");
+    navigate("/discover?random=true");
   };
 
   
