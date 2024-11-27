@@ -70,7 +70,7 @@ const Navbar: React.FC = () => {
             </a>
             
             <div className="hidden md:flex space-x-6">
-              <a onClick={handleRandomMovie} className="text-gray-300 hover:text-white">Discover</a>
+              <a onClick={() => navigate("/discover")} className="text-gray-300 hover:text-white">Discover</a>
               <a onClick={() => navigate("/recommendations")} className="text-gray-300 hover:text-white">Recommendations</a>
               <a onClick={() => navigate("/shows")} className="text-gray-300 hover:text-white">TV Shows</a>
               <a onClick={() => navigate("/reviews")} className="text-gray-300 hover:text-white flex items-center space-x-2 hover:pointer-events-auto">
